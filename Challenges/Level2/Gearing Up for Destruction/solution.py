@@ -1,4 +1,5 @@
 def solution(pegs):
+	
 	delta_pegs = [pegs[i+1] - pegs[i] for i in range(len(pegs) - 1)]
 	alt_sum = 0
 	for delta in delta_pegs:
