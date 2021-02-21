@@ -1,5 +1,6 @@
 def solution(pegs):
 	
+	# Conditions: all peg radius >= 1, first peg double the size of last peg
 	delta_pegs = [pegs[i+1] - pegs[i] for i in range(len(pegs) - 1)]
 	alt_sum = 0
 	for delta in delta_pegs:
