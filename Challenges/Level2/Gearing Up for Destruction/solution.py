@@ -4,7 +4,7 @@ def solution(pegs):
     for delta in delta_pegs:
         alt_sum = delta - alt_sum
 
-    if len(delta_pegs) % 2 == 0:
+    if len(pegs) % 2 != 0:
         rad = [alt_sum * -2, 1]
     else:
         if (alt_sum * 2) % 3 == 0:
